@@ -45,6 +45,7 @@ namespace FallingObjectsAlex
             //declare local variables
             double time, answer;
 
+         
             //convert string from each textbox to a double
             time = double.Parse(txtTime.Text);
 
