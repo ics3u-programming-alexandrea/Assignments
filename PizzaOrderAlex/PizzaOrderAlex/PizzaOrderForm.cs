@@ -39,11 +39,7 @@ namespace PizzaOrderAlex
         const double MEDIUMDRINK = 2.50;
         const double LARGEDRINK = 3.10;
         const double EXTRALARGEDRINK = 3.50;
-        const double 
-        const double 
-        const double 
-        const double 
-
+        
 
 
         const double ALBERTATAX = 1.05;
@@ -55,7 +51,7 @@ namespace PizzaOrderAlex
 
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
-            if (uChoice == 6)
+          
         }
     }
 
