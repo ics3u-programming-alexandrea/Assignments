@@ -8,3 +8,12 @@ N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\PizzaOrde
 N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\PizzaOrderAlex\PizzaOrderAlex\obj\Debug\PizzaOrderAlex.exe
 N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\PizzaOrderAlex\PizzaOrderAlex\obj\Debug\PizzaOrderAlex.pdb
 N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\PizzaOrderAlex\PizzaOrderAlex\obj\Debug\PizzaOrderAlex.frmPizzaOrder.resources
+C:\Users\User\Documents\ICS3U Programming\Assignments\PizzaOrderAlex\PizzaOrderAlex\obj\Debug\PizzaOrderAlex.csprojAssemblyReference.cache
+C:\Users\User\Documents\ICS3U Programming\Assignments\PizzaOrderAlex\PizzaOrderAlex\obj\Debug\PizzaOrderAlex.grbPizza.resources
+C:\Users\User\Documents\ICS3U Programming\Assignments\PizzaOrderAlex\PizzaOrderAlex\obj\Debug\PizzaOrderAlex.Properties.Resources.resources
+C:\Users\User\Documents\ICS3U Programming\Assignments\PizzaOrderAlex\PizzaOrderAlex\obj\Debug\PizzaOrderAlex.csproj.GenerateResource.cache
+C:\Users\User\Documents\ICS3U Programming\Assignments\PizzaOrderAlex\PizzaOrderAlex\obj\Debug\PizzaOrderAlex.exe
+C:\Users\User\Documents\ICS3U Programming\Assignments\PizzaOrderAlex\PizzaOrderAlex\obj\Debug\PizzaOrderAlex.pdb
+C:\Users\User\Documents\ICS3U Programming\Assignments\PizzaOrderAlex\PizzaOrderAlex\bin\Debug\PizzaOrderAlex.exe.config
+C:\Users\User\Documents\ICS3U Programming\Assignments\PizzaOrderAlex\PizzaOrderAlex\bin\Debug\PizzaOrderAlex.exe
+C:\Users\User\Documents\ICS3U Programming\Assignments\PizzaOrderAlex\PizzaOrderAlex\bin\Debug\PizzaOrderAlex.pdb

@@ -16,7 +16,7 @@ namespace PizzaOrderAlex
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPizzaOrder());
+            Application.Run(new grbPizza());
         }
     }
 }
