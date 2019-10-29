@@ -1,0 +1,9 @@
+C:\Users\User\Documents\ICS3U Programming\Unit-3-Decisions-\Simplified21Alex\Simplified21Alex\bin\Debug\Simplified21Alex.exe.config
+C:\Users\User\Documents\ICS3U Programming\Unit-3-Decisions-\Simplified21Alex\Simplified21Alex\bin\Debug\Simplified21Alex.exe
+C:\Users\User\Documents\ICS3U Programming\Unit-3-Decisions-\Simplified21Alex\Simplified21Alex\bin\Debug\Simplified21Alex.pdb
+C:\Users\User\Documents\ICS3U Programming\Unit-3-Decisions-\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.csprojAssemblyReference.cache
+C:\Users\User\Documents\ICS3U Programming\Unit-3-Decisions-\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.Properties.Resources.resources
+C:\Users\User\Documents\ICS3U Programming\Unit-3-Decisions-\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.frmSimplified21.resources
+C:\Users\User\Documents\ICS3U Programming\Unit-3-Decisions-\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.csproj.GenerateResource.cache
+C:\Users\User\Documents\ICS3U Programming\Unit-3-Decisions-\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.exe
+C:\Users\User\Documents\ICS3U Programming\Unit-3-Decisions-\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.pdb
