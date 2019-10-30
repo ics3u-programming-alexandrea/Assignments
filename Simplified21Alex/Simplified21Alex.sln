@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29326.143
+VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplified21Alex", "Simplified21Alex\Simplified21Alex.csproj", "{817C8AE7-96B4-4A1C-9C63-C3B50D3D33E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplified21Alex", "Simplified21Alex\Simplified21Alex.csproj", "{64FCEEC5-1F17-495D-BC16-8DC33798C0AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{817C8AE7-96B4-4A1C-9C63-C3B50D3D33E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{817C8AE7-96B4-4A1C-9C63-C3B50D3D33E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{817C8AE7-96B4-4A1C-9C63-C3B50D3D33E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{817C8AE7-96B4-4A1C-9C63-C3B50D3D33E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64FCEEC5-1F17-495D-BC16-8DC33798C0AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64FCEEC5-1F17-495D-BC16-8DC33798C0AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64FCEEC5-1F17-495D-BC16-8DC33798C0AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64FCEEC5-1F17-495D-BC16-8DC33798C0AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CFCA2ECA-9029-4DB6-AAFE-368BBB6113A0}
+		SolutionGuid = {C2FA47DE-38C7-42D4-BD3B-C2DA027F928A}
 	EndGlobalSection
 EndGlobal
