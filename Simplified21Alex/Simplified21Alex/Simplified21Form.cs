@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+
+
 
 
 
@@ -15,14 +18,14 @@ namespace Simplified21Alex
     public partial class frmSimplified21 : Form
 
     {
-        bool turnp1= false;
-        bool turnp2 =false;
-        bool turnd = false;
+       
+       
         //declear global variables
         const int MAX_VALUE = 11;
         const int MIN_VALUE = 1;
         Random numberGenerator = new Random();
-       
+        
+
         int cardp1;
         int cardp2;
         int cardp3;
@@ -33,6 +36,7 @@ namespace Simplified21Alex
         int cardd1;
         int cardd2;
         int cardd3;
+        int cardd4;
         int player1total;
         int player2total;
         int dealerstotal;
@@ -56,6 +60,7 @@ namespace Simplified21Alex
             this.lblCardpp1.Hide();
             this.lblCardpp2.Hide();
             this.lblCardpp3.Hide();
+            this.lblCardd4.Hide();
             this.btnHit.Hide();
             this.btnStay.Hide();
             this.lblComment.Hide();
@@ -105,9 +110,12 @@ namespace Simplified21Alex
             lblCardd2.Text = Convert.ToString(cardd2);
             cardd3 = numberGenerator.Next(MIN_VALUE, MAX_VALUE + 1);
             lblCardd3.Text = Convert.ToString(cardd3);
-            player1total = cardp1 + cardp2;
+            cardd4 = numberGenerator.Next(MIN_VALUE, MAX_VALUE + 1);
+            lblCardd4.Text=Convert.ToString(cardd4);
+
+            player1total = cardp1 + cardp2 ;
             lblPtotal.Text = Convert.ToString(player1total);
-            player2total = cardpp1 + cardpp2;
+            player2total = cardpp1 + cardpp2 ;
             lblP2total.Text = Convert.ToString(player2total);
             dealerstotal = cardd1 + cardd2;
             lblDtotal.Text = Convert.ToString(dealerstotal);
@@ -120,28 +128,16 @@ namespace Simplified21Alex
             {
                 this.lblComment.Text = Convert.ToString("Bust!! Player2 loses");
             }
-            else if(dealerstotal<21)
+            else if(dealerstotal>21)
             {
                 this.lblComment.Text = Convert.ToString("Bust!! Dealer wins");
             }
-
-            if (turnp1 == true )
-            {
-                this.btnHit.Enabled= true;
-            }
             else
             {
-                this.btnHit.Enabled = false;
+                this.lblComment.Hide();
             }
-            if(turnd==true)
-            {
-               
 
-            }
-            if(turnp2==true)
-            {
-
-            }
+           
 
         }
 
@@ -152,38 +148,78 @@ namespace Simplified21Alex
             this.Close();
         }
 
+       
         private void btnHit_Click_1(object sender, EventArgs e)
         {
+
+            this.lblComment.Hide();
             if (player1total > 21)
             {
                 this.lblComment.Text = Convert.ToString("Bust!! Player1 loses");
+                this.lblComment.Show();
+                lblPtotal.Show();
+                lblDtotal.Show();
+                lblP2total.Show();
+               
+                
             }
-            else if (player2total > 21)
-            {
+                else if (player2total > 21)
+             {
                 this.lblComment.Text = Convert.ToString("Bust!! Player2 loses");
+                this.lblComment.Show();
+                lblPtotal.Show();
+                lblDtotal.Show();
+                lblP2total.Show();
             }
-            else if (dealerstotal < 21)
+            else if (dealerstotal > 21)
             {
                 this.lblComment.Text = Convert.ToString("Bust!! Dealer wins");
+                this.lblComment.Show();
+                lblPtotal.Show();
+                lblDtotal.Show();
+                lblP2total.Show();
             }
             if (player1total == 21)
             {
                 this.lblComment.Text = Convert.ToString("BlackJack!! Player1 wins");
+                this.lblComment.Show();
+                lblPtotal.Show();
+                lblDtotal.Show();
+                lblP2total.Show();
             }
             else if (player2total == 21)
             {
                 this.lblComment.Text = Convert.ToString("BlackJack!! Player2 wins");
+                this.lblComment.Show();
             }
             else if (dealerstotal == 21)
             {
                 this.lblComment.Text = Convert.ToString("BlackJack!! Dealer wins");
+                this.lblComment.Show();
+                lblPtotal.Show();
+                lblDtotal.Show();
+                lblP2total.Show();
             }
             else
             {
-                this.lblCardp3.Show();
-                
+                this.lblComment.Hide();
+                lblPtotal.Hide();
+                lblDtotal.Hide();
+                lblP2total.Hide();
+
+
             }
-           
+            this.lblCardp3.Show();
+            if (player2total <= 15)
+            {
+
+
+            }
+            else
+            {
+
+            }
+
         }
 
         private void btnHelp_Click(object sender, EventArgs e)
@@ -194,6 +230,26 @@ namespace Simplified21Alex
 
         private void btnStay_Click(object sender, EventArgs e)
         {
+            this.btnHit.Enabled = false;
+            this.btnStay.Enabled = false;
+            this.lblCardd2.Show();
+            dealerstotal = cardd1 + cardd2;
+            if (dealerstotal>=17)
+            {
+                this.lblDtotal.Show();
+            }
+            else
+            {
+                this.lblCardd3.Show();
+                dealerstotal = cardd1 + cardd2 + cardd3;
+            }
+            if (dealerstotal >= 17)
+            {
+                lblCardd4.Show();
+                dealerstotal = cardd1 + cardd2 + cardd3 + cardd4;
+            }
+
+
             player1total = cardp1 + cardp2 +cardp3;
             lblPtotal.Text = Convert.ToString(player1total);
             player2total = cardpp1 + cardpp2;
@@ -203,6 +259,11 @@ namespace Simplified21Alex
             this.lblP2total.Show();
             this.lblPtotal.Show();
             this.lblDtotal.Show();
+           
+            if(player1total>21)
+            {
+                this.lblComment.Text = "Bust!! player1 loses";
+            }
 
         }
     }

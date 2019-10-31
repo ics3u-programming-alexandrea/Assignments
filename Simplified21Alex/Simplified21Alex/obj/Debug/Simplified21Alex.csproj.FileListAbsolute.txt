@@ -7,3 +7,13 @@ C:\Users\User\Documents\ICS3U Programming\Assignments\Simplified21Alex\Simplifie
 C:\Users\User\Documents\ICS3U Programming\Assignments\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.csproj.GenerateResource.cache
 C:\Users\User\Documents\ICS3U Programming\Assignments\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.exe
 C:\Users\User\Documents\ICS3U Programming\Assignments\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.pdb
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\Simplified21Alex\Simplified21Alex\bin\Debug\Simplified21Alex.exe.config
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\Simplified21Alex\Simplified21Alex\bin\Debug\Simplified21Alex.exe
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\Simplified21Alex\Simplified21Alex\bin\Debug\Simplified21Alex.pdb
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.csprojAssemblyReference.cache
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.Properties.Resources.resources
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.frmSimplified21.resources
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.csproj.GenerateResource.cache
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.csproj.CoreCompileInputs.cache
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.exe
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\Simplified21Alex\Simplified21Alex\obj\Debug\Simplified21Alex.pdb
