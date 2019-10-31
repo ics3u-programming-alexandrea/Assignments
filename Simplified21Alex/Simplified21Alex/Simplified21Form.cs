@@ -22,10 +22,10 @@ namespace Simplified21Alex
        
         //declear global variables
         const int MAX_VALUE = 11;
-        const int MIN_VALUE = 1;
-        Random numberGenerator = new Random();
-        
-
+        const int MIN_VALUE = 2;
+        readonly Random numberGenerator = new Random();
+        int hitCount2;
+        int hitCount;
         int cardp1;
         int cardp2;
         int cardp3;
@@ -60,18 +60,27 @@ namespace Simplified21Alex
             this.lblCardpp1.Hide();
             this.lblCardpp2.Hide();
             this.lblCardpp3.Hide();
+            this.lblCardpp4.Hide();
             this.lblCardd4.Hide();
             this.btnHit.Hide();
             this.btnStay.Hide();
             this.lblComment.Hide();
+            this.btnStay2.Hide();
+            this.btnHit2.Hide();
           
         }
         
 
-        private void btnStart_Click_1(object sender, EventArgs e)
+        private void BtnStart_Click_1(object sender, EventArgs e)
         {
+            this.btnHit2.Enabled = false;
+            this.btnStay2.Enabled = false;
+            this.btnHit.Enabled = true;
+            this.btnStay.Enabled = true;
 
+            lblPtotal.Show();
 
+            lblP2total.Show();
             this.lblBlackjack.Hide();
             this.Refresh();
 
@@ -80,6 +89,9 @@ namespace Simplified21Alex
             this.btnStay.Show();
             this.lblCardd1.Show();
             this.lblPlayer2.Show();
+            this.btnHit2.Show();
+            this.btnStay2.Show();
+
 
 
             lblDealers.Show();
@@ -123,36 +135,357 @@ namespace Simplified21Alex
             if(player1total>21)
             {
                 this.lblComment.Text = Convert.ToString("Bust!! Player1 loses");
+                this.btnHit.Enabled = false;
+                this.btnStay.Enabled = false;
             }
             else if(player2total > 21)
             {
                 this.lblComment.Text = Convert.ToString("Bust!! Player2 loses");
+                this.btnHit.Enabled = false;
+                this.btnStay.Enabled = false;
             }
             else if(dealerstotal>21)
             {
                 this.lblComment.Text = Convert.ToString("Bust!! Dealer wins");
+                this.btnHit.Enabled = false;
+                this.btnStay.Enabled = false;
+            }
+            if (player1total == 21)
+            {
+                this.lblComment.Text = Convert.ToString("BlackJack!! Player1 wins");
+                this.lblComment.Show();
+                lblPtotal.Show();
+                
+                lblP2total.Show();
+            }
+            else if (player2total == 21)
+            {
+                this.lblComment.Text = Convert.ToString("BlackJack!! Player2 wins");
+                this.lblComment.Show();
             }
             else
             {
                 this.lblComment.Hide();
             }
 
-           
+            this.Refresh();
+            if (player2total > 21)
+            {
+                this.lblComment.Text = Convert.ToString("Bust!! Player2 loses");
+                this.btnHit2.Enabled = false;
+                this.btnStay2.Enabled = false;
+            }
+            else if (player2total > 21)
+            {
+                this.lblComment.Text = Convert.ToString("Bust!! Player2 loses");
+                this.btnHit.Enabled = false;
+                this.btnStay.Enabled = false;
+            }
+            else if (dealerstotal > 21)
+            {
+                this.lblComment.Text = Convert.ToString("Bust!! Dealer wins");
+                this.btnHit.Enabled = false;
+                this.btnStay.Enabled = false;
+            }
+            if (player1total == 21)
+            {
+                this.lblComment.Text = Convert.ToString("BlackJack!! Player1 wins");
+                this.lblComment.Show();
+                lblPtotal.Show();
+
+                lblP2total.Show();
+            }
+            else if (player2total == 21)
+            {
+                this.lblComment.Text = Convert.ToString("BlackJack!! Player2 wins");
+                this.lblComment.Show();
+            }
+            else
+            {
+                this.lblComment.Hide();
+            }
+
+            this.Refresh();
 
         }
 
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void BtnExit_Click(object sender, EventArgs e)
         {
             //this will exit the form
             this.Close();
         }
 
        
-        private void btnHit_Click_1(object sender, EventArgs e)
+        private void BtnHit_Click_1(object sender, EventArgs e)
         {
+            hitCount++;
+            
+            
+            if (hitCount == 1)
+            {
+                this.lblCardp3.Show();
+                lblPtotal.Show();
 
+                lblP2total.Show();
+                player1total = cardp1 + cardp2 + cardp3;
+                lblPtotal.Text = Convert.ToString(player1total);
+                if (player1total > 21)
+                {
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Player1 loses");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    lblCardd2.Show();
+                    this.btnHit.Enabled = false;
+                    this.btnStay.Enabled = false;
+
+
+
+                }
+                else if (player2total > 21)
+                {
+                    this.lblComment.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Player2 loses");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit.Enabled = false;
+                    this.btnStay.Enabled = false;
+                }
+                else if (dealerstotal > 21)
+                {
+                    this.lblComment.Show();
+                    lblCardd2.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Dealer wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit.Enabled = false;
+                    this.btnStay.Enabled = false;
+                }
+                if (player1total == 21)
+                {
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Player1 wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit.Enabled = false;
+                    this.btnStay.Enabled = false;
+                }
+                else if (player2total == 21)
+                {
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Player2 wins");
+                    this.lblComment.Show();
+                }
+                else if (dealerstotal == 21)
+                {
+                    lblCardd2.Show();
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Dealer wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                }
+            }
+            else if (hitCount == 2)
+            {
+                player1total = cardp1 + cardp2 + cardp3 + cardp4;
+                this.lblCardp4.Show();
+                lblPtotal.Text = Convert.ToString(player1total);
+                if (player1total > 21)
+                {
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Player1 loses");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    lblCardd2.Show();
+                    this.btnHit.Enabled = false;
+                    this.btnStay.Enabled = false;
+
+
+
+                }
+                else if (player2total > 21)
+                {
+                    this.lblComment.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Player2 loses");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit.Enabled = false;
+                    this.btnStay.Enabled = false;
+                }
+                else if (dealerstotal > 21)
+                {
+                    this.lblComment.Show();
+                    lblCardd2.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Dealer wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit.Enabled = false;
+                    this.btnStay.Enabled = false;
+                }
+                if (player1total == 21)
+                {
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Player1 wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit.Enabled = false;
+                    this.btnStay.Enabled = false;
+                }
+                else if (player2total == 21)
+                {
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Player2 wins");
+                    this.lblComment.Show();
+                }
+                else if (dealerstotal == 21)
+                {
+                    lblCardd2.Show();
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Dealer wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                }
+            }
+
+            this.lblCardp3.Show();
             this.lblComment.Hide();
+            lblDtotal.Hide();
+            lblPtotal.Show();
+            lblPtotal.Text = Convert.ToString(player1total);
+            lblP2total.Show();
+
+                if (player1total > 21)
+                {
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Player1 loses");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    lblCardd2.Show();
+                     this.btnHit.Enabled = false;
+                    this.btnStay.Enabled = false;
+
+
+
+                }
+                else if (player2total > 21)
+                {
+                    this.lblComment.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Player2 loses");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit.Enabled = false;
+                    this.btnStay.Enabled = false;
+                }
+                else if (dealerstotal > 21)
+                {
+                    this.lblComment.Show();
+                    lblCardd2.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Dealer wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit.Enabled = false;
+                    this.btnStay.Enabled = false;
+                }
+                if (player1total == 21)
+                {
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Player1 wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                this.btnHit.Enabled = false;
+                this.btnStay.Enabled = false;
+                }
+                else if (player2total == 21)
+                {
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Player2 wins");
+                    this.lblComment.Show();
+                }
+                else if (dealerstotal == 21)
+                {
+                    lblCardd2.Show();
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Dealer wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                }
+
+            this.btnHit.Enabled = false;
+            this.btnStay.Enabled = false;
+            this.btnHit2.Enabled = true;
+            this.btnStay2.Enabled =true;
+
+
+
+
+        }
+
+        private void BtnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("The aim of the game is to get close to or exactly 21 without going over. At the and of the game the totals are display" +
+                "and then if no play gets exactly 21, the Player who is closest to 21 wins", "Blackjack By Alex");
+        }
+
+        private void BtnStay_Click(object sender, EventArgs e)
+        {
+            lblDtotal.Show();
+            this.btnHit.Enabled = false;
+            this.btnStay.Enabled = false;
+            this.lblCardd2.Show();
+            dealerstotal = cardd1 + cardd2;
+            if (dealerstotal>=17)
+            {
+                this.lblDtotal.Show();
+            }
+            else
+            {
+                
+                dealerstotal = cardd1 + cardd2 + cardd3;
+                this.lblCardd3.Show();
+            }
+            if (dealerstotal >= 17)
+            {
+                
+                dealerstotal = cardd1 + cardd2 + cardd3 + cardd4;
+                lblCardd4.Show();
+            }
+
+
+            player1total = cardp1 + cardp2 +cardp3;
+            lblPtotal.Text = Convert.ToString(player1total);
+            player2total = cardpp1 + cardpp2;
+            lblP2total.Text = Convert.ToString(player2total);
+            dealerstotal = cardd1 + cardd2;
+            lblDtotal.Text = Convert.ToString(dealerstotal);
+            this.lblP2total.Show();
+            this.lblPtotal.Show();
+            this.lblDtotal.Show();
+
             if (player1total > 21)
             {
                 this.lblComment.Text = Convert.ToString("Bust!! Player1 loses");
@@ -160,11 +493,11 @@ namespace Simplified21Alex
                 lblPtotal.Show();
                 lblDtotal.Show();
                 lblP2total.Show();
-               
-                
+
+
             }
-                else if (player2total > 21)
-             {
+            else if (player2total > 21)
+            {
                 this.lblComment.Text = Convert.ToString("Bust!! Player2 loses");
                 this.lblComment.Show();
                 lblPtotal.Show();
@@ -173,6 +506,7 @@ namespace Simplified21Alex
             }
             else if (dealerstotal > 21)
             {
+                lblCardd2.Show();
                 this.lblComment.Text = Convert.ToString("Bust!! Dealer wins");
                 this.lblComment.Show();
                 lblPtotal.Show();
@@ -194,6 +528,7 @@ namespace Simplified21Alex
             }
             else if (dealerstotal == 21)
             {
+                lblCardd2.Show();
                 this.lblComment.Text = Convert.ToString("BlackJack!! Dealer wins");
                 this.lblComment.Show();
                 lblPtotal.Show();
@@ -210,60 +545,249 @@ namespace Simplified21Alex
 
             }
             this.lblCardp3.Show();
-            if (player2total <= 15)
+            if (hitCount == 2)
             {
-
-
-            }
-            else
-            {
-
-            }
-
-        }
-
-        private void btnHelp_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("The aim of the game is to get close to or exactly 21 without going over. At the and of the game the totals are display" +
-                "and then if no play gets exactly 21, the Player who is closest to 21 wins", "Blackjack By Alex");
-        }
-
-        private void btnStay_Click(object sender, EventArgs e)
-        {
-            this.btnHit.Enabled = false;
-            this.btnStay.Enabled = false;
-            this.lblCardd2.Show();
-            dealerstotal = cardd1 + cardd2;
-            if (dealerstotal>=17)
-            {
-                this.lblDtotal.Show();
-            }
-            else
-            {
-                this.lblCardd3.Show();
-                dealerstotal = cardd1 + cardd2 + cardd3;
-            }
-            if (dealerstotal >= 17)
-            {
-                lblCardd4.Show();
-                dealerstotal = cardd1 + cardd2 + cardd3 + cardd4;
+                this.lblCardp4.Show();
             }
 
 
-            player1total = cardp1 + cardp2 +cardp3;
-            lblPtotal.Text = Convert.ToString(player1total);
-            player2total = cardpp1 + cardpp2;
-            lblP2total.Text = Convert.ToString(player2total);
-            dealerstotal = cardd1 + cardd2;
-            lblDtotal.Text = Convert.ToString(dealerstotal);
-            this.lblP2total.Show();
-            this.lblPtotal.Show();
-            this.lblDtotal.Show();
-           
-            if(player1total>21)
+
+
+            if (player1total>21)
             {
                 this.lblComment.Text = "Bust!! player1 loses";
             }
+
+        }
+
+        private void BtnHit2_Click(object sender, EventArgs e)
+        {
+
+            hitCount2++;
+
+
+            if (hitCount2 == 1)
+            {
+                this.lblCardpp3.Show();
+                lblPtotal.Show();
+                lblP2total.Show();
+                player2total = cardpp1 + cardpp2 + cardpp3;
+                lblP2total.Text = Convert.ToString(player2total);
+                if (player2total > 21)
+                {
+                    this.lblComment.Show();
+                    lblP2total.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Player2 loses");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    lblCardd2.Show();
+                    this.btnHit2.Enabled = false;
+                    this.btnStay2.Enabled = false;
+
+
+
+                }
+                else if (player2total > 21)
+                {
+                    this.lblComment.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Player2 loses");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit2.Enabled = false;
+                    this.btnStay2.Enabled = false;
+                }
+                else if (dealerstotal > 21)
+                {
+                    this.lblComment.Show();
+                    lblCardd2.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Dealer wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit2.Enabled = false;
+                    this.btnStay2.Enabled = false;
+                }
+                if (player1total == 21)
+                {
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Player1 wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit2.Enabled = false;
+                    this.btnStay2.Enabled = false;
+                }
+                else if (player2total == 21)
+                {
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Player2 wins");
+                    this.lblComment.Show();
+                }
+                else if (dealerstotal == 21)
+                {
+                    lblCardd2.Show();
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Dealer wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                }
+            }
+            else if (hitCount == 2)
+            {
+                player1total = cardp1 + cardp2 + cardp3 + cardp4;
+                this.lblCardp4.Show();
+                lblPtotal.Text = Convert.ToString(player1total);
+                if (player1total > 21)
+                {
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Player1 loses");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    lblCardd2.Show();
+                    this.btnHit2.Enabled = false;
+                    this.btnStay2.Enabled = false;
+
+
+
+                }
+                else if (player2total > 21)
+                {
+                    this.lblComment.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Player2 loses");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit2.Enabled = false;
+                    this.btnStay2.Enabled = false;
+                }
+                else if (dealerstotal > 21)
+                {
+                    this.lblComment.Show();
+                    lblCardd2.Show();
+                    this.lblComment.Text = Convert.ToString("Bust!! Dealer wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit2.Enabled = false;
+                    this.btnStay2.Enabled = false;
+                }
+                if (player1total == 21)
+                {
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Player1 wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                    this.btnHit2.Enabled = false;
+                    this.btnStay2.Enabled = false;
+                }
+                else if (player2total == 21)
+                {
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Player2 wins");
+                    this.lblComment.Show();
+                }
+                else if (dealerstotal == 21)
+                {
+                    lblCardd2.Show();
+                    this.lblComment.Text = Convert.ToString("BlackJack!! Dealer wins");
+                    this.lblComment.Show();
+                    lblPtotal.Show();
+                    lblDtotal.Show();
+                    lblP2total.Show();
+                }
+            }
+
+            this.lblCardpp3.Show();
+            this.lblComment.Hide();
+            lblDtotal.Hide();
+            lblPtotal.Show();
+            lblPtotal.Text = Convert.ToString(player1total);
+            lblP2total.Show();
+
+            if (player1total > 21)
+            {
+                this.lblComment.Show();
+                lblPtotal.Show();
+                this.lblComment.Text = Convert.ToString("Bust!! Player1 loses");
+                this.lblComment.Show();
+                lblPtotal.Show();
+                lblDtotal.Show();
+                lblP2total.Show();
+                lblCardd2.Show();
+                this.btnHit2.Enabled = false;
+                this.btnStay2.Enabled = false;
+
+
+
+            }
+            else if (player2total > 21)
+            {
+                this.lblComment.Show();
+                this.lblComment.Text = Convert.ToString("Bust!! Player2 loses");
+                this.lblComment.Show();
+                lblPtotal.Show();
+                lblDtotal.Show();
+                lblP2total.Show();
+                this.btnHit2.Enabled = false;
+                this.btnStay2.Enabled = false;
+            }
+            else if (dealerstotal > 21)
+            {
+                this.lblComment.Show();
+                lblCardd2.Show();
+                this.lblComment.Text = Convert.ToString("Bust!! Dealer wins");
+                this.lblComment.Show();
+                lblPtotal.Show();
+                lblDtotal.Show();
+                lblP2total.Show();
+                this.btnHit2.Enabled = false;
+                this.btnStay2.Enabled = false;
+            }
+            if (player1total == 21)
+            {
+                this.lblComment.Text = Convert.ToString("BlackJack!! Player1 wins");
+                this.lblComment.Show();
+                lblPtotal.Show();
+                lblDtotal.Show();
+                lblP2total.Show();
+                this.btnHit2.Enabled = false;
+                this.btnStay2.Enabled = false;
+            }
+            else if (player2total == 21)
+            {
+                this.lblComment.Text = Convert.ToString("BlackJack!! Player2 wins");
+                this.lblComment.Show();
+            }
+            else if (dealerstotal == 21)
+            {
+                lblCardd2.Show();
+                this.lblComment.Text = Convert.ToString("BlackJack!! Dealer wins");
+                this.lblComment.Show();
+                lblPtotal.Show();
+                lblDtotal.Show();
+                lblP2total.Show();
+            }
+
+            this.btnHit.Enabled = false;
+            this.btnStay.Enabled = false;
+            this.btnHit2.Enabled = false;
+            this.btnStay2.Enabled = false;
+            lblCardd2.Show();
+            this.btnHit.Enabled = true;
+            this.btnStay.Enabled = true;
+
+
+
 
         }
     }

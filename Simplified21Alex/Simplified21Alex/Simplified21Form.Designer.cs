@@ -52,6 +52,9 @@
             this.lblCardp4 = new System.Windows.Forms.Label();
             this.btnHelp = new System.Windows.Forms.Button();
             this.lblCardd4 = new System.Windows.Forms.Label();
+            this.lblCardpp4 = new System.Windows.Forms.Label();
+            this.btnHit2 = new System.Windows.Forms.Button();
+            this.btnStay2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPlayers
@@ -87,13 +90,13 @@
             // btnStay
             // 
             this.btnStay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStay.Location = new System.Drawing.Point(665, 298);
+            this.btnStay.Location = new System.Drawing.Point(147, 335);
             this.btnStay.Name = "btnStay";
             this.btnStay.Size = new System.Drawing.Size(81, 36);
             this.btnStay.TabIndex = 3;
             this.btnStay.Text = "Stay";
             this.btnStay.UseVisualStyleBackColor = true;
-            this.btnStay.Click += new System.EventHandler(this.btnStay_Click);
+            this.btnStay.Click += new System.EventHandler(this.BtnStay_Click);
             // 
             // btnHit
             // 
@@ -104,7 +107,7 @@
             this.btnHit.TabIndex = 4;
             this.btnHit.Text = "Hit";
             this.btnHit.UseVisualStyleBackColor = true;
-            this.btnHit.Click += new System.EventHandler(this.btnHit_Click_1);
+            this.btnHit.Click += new System.EventHandler(this.BtnHit_Click_1);
             // 
             // btnStart
             // 
@@ -115,7 +118,7 @@
             this.btnStart.TabIndex = 5;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click_1);
+            this.btnStart.Click += new System.EventHandler(this.BtnStart_Click_1);
             // 
             // lblCardp1
             // 
@@ -206,7 +209,7 @@
             this.btnExit.TabIndex = 14;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // lblPlayer2
             // 
@@ -222,7 +225,7 @@
             // 
             this.lblCardpp3.AutoSize = true;
             this.lblCardpp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCardpp3.Location = new System.Drawing.Point(795, 255);
+            this.lblCardpp3.Location = new System.Drawing.Point(795, 243);
             this.lblCardpp3.Name = "lblCardpp3";
             this.lblCardpp3.Size = new System.Drawing.Size(60, 24);
             this.lblCardpp3.TabIndex = 16;
@@ -262,7 +265,7 @@
             // 
             this.lblComment.AutoSize = true;
             this.lblComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComment.Location = new System.Drawing.Point(362, 287);
+            this.lblComment.Location = new System.Drawing.Point(305, 293);
             this.lblComment.Name = "lblComment";
             this.lblComment.Size = new System.Drawing.Size(82, 33);
             this.lblComment.TabIndex = 20;
@@ -287,7 +290,7 @@
             this.btnHelp.TabIndex = 22;
             this.btnHelp.Text = "Help?";
             this.btnHelp.UseVisualStyleBackColor = true;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            this.btnHelp.Click += new System.EventHandler(this.BtnHelp_Click);
             // 
             // lblCardd4
             // 
@@ -299,11 +302,45 @@
             this.lblCardd4.TabIndex = 23;
             this.lblCardd4.Text = "label2";
             // 
+            // lblCardpp4
+            // 
+            this.lblCardpp4.AutoSize = true;
+            this.lblCardpp4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCardpp4.Location = new System.Drawing.Point(795, 310);
+            this.lblCardpp4.Name = "lblCardpp4";
+            this.lblCardpp4.Size = new System.Drawing.Size(60, 24);
+            this.lblCardpp4.TabIndex = 24;
+            this.lblCardpp4.Text = "label1";
+            // 
+            // btnHit2
+            // 
+            this.btnHit2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHit2.Location = new System.Drawing.Point(675, 290);
+            this.btnHit2.Name = "btnHit2";
+            this.btnHit2.Size = new System.Drawing.Size(83, 36);
+            this.btnHit2.TabIndex = 25;
+            this.btnHit2.Text = "Hit";
+            this.btnHit2.UseVisualStyleBackColor = true;
+            this.btnHit2.Click += new System.EventHandler(this.BtnHit2_Click);
+            // 
+            // btnStay2
+            // 
+            this.btnStay2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStay2.Location = new System.Drawing.Point(675, 335);
+            this.btnStay2.Name = "btnStay2";
+            this.btnStay2.Size = new System.Drawing.Size(81, 36);
+            this.btnStay2.TabIndex = 26;
+            this.btnStay2.Text = "Stay";
+            this.btnStay2.UseVisualStyleBackColor = true;
+            // 
             // frmSimplified21
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1009, 545);
+            this.Controls.Add(this.btnStay2);
+            this.Controls.Add(this.btnHit2);
+            this.Controls.Add(this.lblCardpp4);
             this.Controls.Add(this.lblCardd4);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.lblCardp4);
@@ -361,6 +398,9 @@
         private System.Windows.Forms.Label lblCardp4;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Label lblCardd4;
+        private System.Windows.Forms.Label lblCardpp4;
+        private System.Windows.Forms.Button btnHit2;
+        private System.Windows.Forms.Button btnStay2;
     }
 }
 
