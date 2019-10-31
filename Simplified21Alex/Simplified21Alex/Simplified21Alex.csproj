@@ -62,6 +62,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Simplified21Form.resx">
       <DependentUpon>Simplified21Form.cs</DependentUpon>
@@ -78,6 +79,126 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2d.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2h.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2s.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2t.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3h.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3s.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3t.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4d.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4h.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4s.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4t.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5d.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5h.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5s.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5t.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6d.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6h.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6s.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6t.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7d.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7h.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7s.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7t.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8d.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8h.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8s.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8t.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9d.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9h.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9s.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9t.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10d.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10h.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10s.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10t.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ad.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ah.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\As.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
