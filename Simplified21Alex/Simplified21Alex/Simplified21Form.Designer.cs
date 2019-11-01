@@ -71,7 +71,7 @@
             // 
             this.lblBlackjack.AutoSize = true;
             this.lblBlackjack.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBlackjack.Location = new System.Drawing.Point(311, 224);
+            this.lblBlackjack.Location = new System.Drawing.Point(320, 218);
             this.lblBlackjack.Name = "lblBlackjack";
             this.lblBlackjack.Size = new System.Drawing.Size(263, 55);
             this.lblBlackjack.TabIndex = 1;
@@ -332,11 +332,13 @@
             this.btnStay2.TabIndex = 26;
             this.btnStay2.Text = "Stay";
             this.btnStay2.UseVisualStyleBackColor = true;
+            this.btnStay2.Click += new System.EventHandler(this.btnStay2_Click);
             // 
             // frmSimplified21
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Simplified21Alex.Properties.Resources.p;
             this.ClientSize = new System.Drawing.Size(1009, 545);
             this.Controls.Add(this.btnStay2);
             this.Controls.Add(this.btnHit2);
