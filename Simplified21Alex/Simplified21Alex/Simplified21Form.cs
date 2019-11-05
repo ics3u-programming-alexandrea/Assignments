@@ -14,7 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Media;
+
 
 
 
@@ -284,9 +284,7 @@ namespace Simplified21Alex
                     this.lblComment.Show();
                     lblCardd2.Show();
                     this.lblComment.Text = Convert.ToString("Bust!! Dealer wins");
-                     SoundPlayer CorrectNoise = new SoundPlayer(@"CorrectAnswer.wav");
-                CorrectNoise.Play();
-                    this.lblComment.Show();
+                     this.lblComment.Show();
                     lblPtotal.Show();
                     lblDtotal.Show();
                     lblP2total.Show();
@@ -479,9 +477,6 @@ namespace Simplified21Alex
                     lblDtotal.Show();
                     lblP2total.Show();
                 }
-
-          
-
 
 
         }
