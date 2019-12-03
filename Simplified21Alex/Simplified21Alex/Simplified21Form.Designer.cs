@@ -71,7 +71,7 @@
             // 
             this.lblBlackjack.AutoSize = true;
             this.lblBlackjack.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBlackjack.Location = new System.Drawing.Point(320, 218);
+            this.lblBlackjack.Location = new System.Drawing.Point(362, 212);
             this.lblBlackjack.Name = "lblBlackjack";
             this.lblBlackjack.Size = new System.Drawing.Size(263, 55);
             this.lblBlackjack.TabIndex = 1;
