@@ -12,7 +12,7 @@ namespace NewSimplified21
 {
     public partial class frmNewSimplified21 : Form
     {
-        List<Image> listCardImages = new List<Image>(); 
+        List<Image> listCardImages = new List<Image>();    
         public frmNewSimplified21()
         {
             InitializeComponent();
@@ -28,7 +28,24 @@ namespace NewSimplified21
             this.btnHit.Hide();
             this.btnStay.Hide();
         }
-       
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            //this will close the program
+            this.Close();
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            //gives user all information they need to know to play the game
+            MessageBox.Show("The rules of the game is simple. You need at least 6 cards to play the game," +
+                " the goal of the game is to get as close to 21 or exactly 21. You would have to keep" +
+                " hitting till you get to 17 then you can stay", "BlackJack!!!");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
