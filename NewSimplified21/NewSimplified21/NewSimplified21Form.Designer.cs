@@ -126,6 +126,7 @@
             this.btnExit.TabIndex = 19;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnHelp
             // 
@@ -136,6 +137,7 @@
             this.btnHelp.TabIndex = 23;
             this.btnHelp.Text = "Help?";
             this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // lblBlackjack
             // 
@@ -169,7 +171,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(48, 68);
+            this.pictureBox1.Image = global::NewSimplified21.Properties.Resources._10t;
+            this.pictureBox1.Location = new System.Drawing.Point(50, 68);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(113, 109);
             this.pictureBox1.TabIndex = 27;
@@ -185,7 +188,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(211, 67);
+            this.pictureBox3.Location = new System.Drawing.Point(206, 67);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(113, 109);
             this.pictureBox3.TabIndex = 29;
