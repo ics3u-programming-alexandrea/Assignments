@@ -1,0 +1,19 @@
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\ABetterSimplified21\ABetterSimplified21\bin\Debug\ABetterSimplified21.exe.config
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\ABetterSimplified21\ABetterSimplified21\bin\Debug\ABetterSimplified21.exe
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\ABetterSimplified21\ABetterSimplified21\bin\Debug\ABetterSimplified21.pdb
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\ABetterSimplified21\ABetterSimplified21\obj\Debug\ABetterSimplified21.csprojAssemblyReference.cache
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\ABetterSimplified21\ABetterSimplified21\obj\Debug\ABetterSimplified21.frmABetter21.resources
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\ABetterSimplified21\ABetterSimplified21\obj\Debug\ABetterSimplified21.Properties.Resources.resources
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\ABetterSimplified21\ABetterSimplified21\obj\Debug\ABetterSimplified21.csproj.GenerateResource.cache
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\ABetterSimplified21\ABetterSimplified21\obj\Debug\ABetterSimplified21.csproj.CoreCompileInputs.cache
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\ABetterSimplified21\ABetterSimplified21\obj\Debug\ABetterSimplified21.exe
+N:\Classes\Sem1-Fall2019\ICS3U Programming\UAlex (s465640)\Assignments\ABetterSimplified21\ABetterSimplified21\obj\Debug\ABetterSimplified21.pdb
+C:\Users\User\Downloads\ABetterSimplified21-20191205T234253Z-001\ABetterSimplified21\ABetterSimplified21\obj\Debug\ABetterSimplified21.csprojAssemblyReference.cache
+C:\Users\User\Downloads\ABetterSimplified21-20191205T234253Z-001\ABetterSimplified21\ABetterSimplified21\obj\Debug\ABetterSimplified21.FrmABetter21.resources
+C:\Users\User\Downloads\ABetterSimplified21-20191205T234253Z-001\ABetterSimplified21\ABetterSimplified21\obj\Debug\ABetterSimplified21.Properties.Resources.resources
+C:\Users\User\Downloads\ABetterSimplified21-20191205T234253Z-001\ABetterSimplified21\ABetterSimplified21\obj\Debug\ABetterSimplified21.csproj.GenerateResource.cache
+C:\Users\User\Downloads\ABetterSimplified21-20191205T234253Z-001\ABetterSimplified21\ABetterSimplified21\obj\Debug\ABetterSimplified21.exe
+C:\Users\User\Downloads\ABetterSimplified21-20191205T234253Z-001\ABetterSimplified21\ABetterSimplified21\obj\Debug\ABetterSimplified21.pdb
+C:\Users\User\Downloads\ABetterSimplified21-20191205T234253Z-001\ABetterSimplified21\ABetterSimplified21\bin\Debug\ABetterSimplified21.exe.config
+C:\Users\User\Downloads\ABetterSimplified21-20191205T234253Z-001\ABetterSimplified21\ABetterSimplified21\bin\Debug\ABetterSimplified21.exe
+C:\Users\User\Downloads\ABetterSimplified21-20191205T234253Z-001\ABetterSimplified21\ABetterSimplified21\bin\Debug\ABetterSimplified21.pdb

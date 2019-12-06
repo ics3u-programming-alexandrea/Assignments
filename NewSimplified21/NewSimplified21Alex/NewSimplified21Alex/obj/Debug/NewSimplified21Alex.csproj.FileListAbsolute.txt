@@ -1,9 +1,0 @@
-C:\Users\User\Documents\ICS3U Programming\Assignments\NewSimplified21\NewSimplified21Alex\NewSimplified21Alex\bin\Debug\NewSimplified21Alex.exe.config
-C:\Users\User\Documents\ICS3U Programming\Assignments\NewSimplified21\NewSimplified21Alex\NewSimplified21Alex\bin\Debug\NewSimplified21Alex.exe
-C:\Users\User\Documents\ICS3U Programming\Assignments\NewSimplified21\NewSimplified21Alex\NewSimplified21Alex\bin\Debug\NewSimplified21Alex.pdb
-C:\Users\User\Documents\ICS3U Programming\Assignments\NewSimplified21\NewSimplified21Alex\NewSimplified21Alex\obj\Debug\NewSimplified21Alex.csprojAssemblyReference.cache
-C:\Users\User\Documents\ICS3U Programming\Assignments\NewSimplified21\NewSimplified21Alex\NewSimplified21Alex\obj\Debug\NewSimplified21Alex.frmNewSimplified21.resources
-C:\Users\User\Documents\ICS3U Programming\Assignments\NewSimplified21\NewSimplified21Alex\NewSimplified21Alex\obj\Debug\NewSimplified21Alex.Properties.Resources.resources
-C:\Users\User\Documents\ICS3U Programming\Assignments\NewSimplified21\NewSimplified21Alex\NewSimplified21Alex\obj\Debug\NewSimplified21Alex.csproj.GenerateResource.cache
-C:\Users\User\Documents\ICS3U Programming\Assignments\NewSimplified21\NewSimplified21Alex\NewSimplified21Alex\obj\Debug\NewSimplified21Alex.exe
-C:\Users\User\Documents\ICS3U Programming\Assignments\NewSimplified21\NewSimplified21Alex\NewSimplified21Alex\obj\Debug\NewSimplified21Alex.pdb
